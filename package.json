@@ -12,6 +12,13 @@
         "url": "https://github.com/felipegamadev/modular-erp"
     },
     "license": "MIT",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "api": "yarn workspace @modular-erp/api",
+        "web": "yarn workspace @modular-erp/web"
+    },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^6.4.0",
         "eslint": "^8.0.1",
